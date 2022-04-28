@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">网络调试助手</string>
+    <string name="c_IP">请输入服务器IP</string>
+    <string name="e_IP">服务器IP:</string>
+    <string name="c_IO">请输入服务器端口</string>
+    <string name="c_Out">请输入发送数据</string>
+    <string name="bt_1">连接</string>
+    <string name="bt_2">断开</string>
+    <string name="bt_3">LED 1</string>
+    <string name="bt_4">LED 2</string>
+    <string name="bt_5">LED 3</string>
+    <string name="bt_6">LED 4</string>
+    <string name="bt_7">发送</string>
+    <string name="bt_8">清除</string>
+</resources>

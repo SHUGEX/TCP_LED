@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.tcp_led">
+
+    <!--需要对WiFi进行操作，所以需要设置网络权限-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:usesCleartextTraffic="false"
+        android:allowBackup="true"
+        android:icon="@drawable/bh"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/bh_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TCP_LED"
+        tools:ignore="UnusedAttribute">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

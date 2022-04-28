@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#f1f3f4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TCP客户端"
+            android:textSize="50dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/mEtIP"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textWebEditText"
+            android:hint="请输入服务器IP"
+            android:drawableStart="@drawable/ic_tree"
+            android:drawablePadding="20dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:autofillHints="" />
+        <!--端口 -->
+        <EditText
+            android:id="@+id/mEtPort"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:hint="请输入服务器端口"
+            android:drawableStart="@drawable/ic_tree"
+            android:drawablePadding="20dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:autofillHints="" />
+        <!--发送 -->
+        <EditText
+            android:id="@+id/mEtOut"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:hint="请输入发送数据"
+            android:drawableStart="@drawable/ic_tree"
+            android:drawablePadding="20dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:autofillHints="" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/mBt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="连接"
+                tools:ignore="UsingOnClickInXml" />
+            <Button
+                android:id="@+id/mBt7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送数据"
+                tools:ignore="UsingOnClickInXml" />
+            <Button
+                android:id="@+id/mBt8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清除"
+                tools:ignore="UsingOnClickInXml" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/mBt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LED1"
+                tools:ignore="UsingOnClickInXml" />
+            <Button
+                android:id="@+id/mBt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LED2"
+                tools:ignore="UsingOnClickInXml" />
+            <Button
+                android:id="@+id/mBt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LED3"
+                tools:ignore="UsingOnClickInXml" />
+            <Button
+                android:id="@+id/mBt6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LED4"
+                tools:ignore="UsingOnClickInXml" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
